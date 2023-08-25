@@ -12,6 +12,6 @@ router.get('/', async function(req, res) {
     if (req.session.passport != undefined) {
         userId = req.session.passport.user.user;
     }
-    res.render('posture', {userId: userId});
+    res.render('posture2', {userId: userId});
 });
 module.exports = router;
