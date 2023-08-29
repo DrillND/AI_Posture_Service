@@ -38,6 +38,7 @@ const mypageRouter    = require('./routes/mypage');
 const postureRouter = require('./routes/posture');
 const tempRouter = require('./routes/temp');
 const teamRouter = require('./routes/team');
+const userDataRouter = require('./routes/user_data');
 
 
 //라우트 설정
@@ -47,6 +48,7 @@ app.use('/mypage', mypageRouter);
 app.use('/posture', postureRouter);
 app.use('/temp', tempRouter);
 app.use('/team', teamRouter);
+app.use('/user_data', userDataRouter);
 
 const PORT = 8080;
 app.listen(PORT, function() {

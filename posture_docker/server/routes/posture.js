@@ -8,7 +8,7 @@ const auth        = require('./auth');
 //});
 
 router.get('/', auth.CheckAuth, async function(req, res) {
-    console.log(req.session.passport.user.user);
+    console.log(req.session.passport.user.user,11111111111);
     //userID를 view에 같이 넘겨주는 기능
     let userId = null;
     if (req.session.passport != undefined) {
